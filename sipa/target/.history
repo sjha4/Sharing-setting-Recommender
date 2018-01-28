@@ -1,0 +1,6 @@
+eclipse with-source=true
+run
+compile
+run
+compile
+run

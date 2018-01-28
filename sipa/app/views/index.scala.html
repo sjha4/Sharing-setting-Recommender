@@ -1,0 +1,29 @@
+@()
+
+@main("SIPA") {
+<form name="formFactory" action="@routes.HomeController.checkInfromForm()" method="post">
+        <div id="content">
+        	<div id="loc">
+            <label>Enter Location</label></br>
+            <select id="location" name = "location">
+  			<option value="1">Graduation ceremony</option>
+  			<option value="2">Library during the day</option>
+ 			<option value="3">Hurricane during the day</option>
+ 			<option value="4">Airport at night</option>
+ 			<option value="5">Hiking on a mountain</option>
+ 			<option value="6">Presenting a paper at a conference</option>
+ 			<option value="7">Bar with a fake ID</option>
+			</select>
+			</div>
+			<div id="Friends">
+			<br></br>
+			<label>Enter Companion Ids separated by | </label></br>
+            <textarea id=CompanionsId name="Companions" rows="15" cols="15"></textarea>
+            </div>
+            <div id="btn">
+            <input id="submit_btn" name="submit_btn" type="submit" value="Submit" />
+        	</div>
+        </div>
+    </form>
+ 
+}
